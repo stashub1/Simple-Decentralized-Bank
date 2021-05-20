@@ -1,4 +1,4 @@
-import { tokens, ether, ETHER_ADDRESS, EVM_REVERT, wait } from './helpers'
+  import { tokens, ether, ETHER_ADDRESS, EVM_REVERT, wait } from './helpers'
 
 const Token = artifacts.require('./Token')
 const DecentralizedBank = artifacts.require('./dBank')
@@ -24,7 +24,7 @@ contract('dBank', ([deployer, user]) => {
       })
 
       it('checking token symbol', async () => {
-        expect(await token.symbol()).to.be.eq('DBC')
+        expect(await token.symbol()).to.be.eq('DCB')
       })
 
       it('checking token initial total supply', async () => {

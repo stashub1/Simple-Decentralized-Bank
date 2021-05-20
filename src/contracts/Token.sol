@@ -1,4 +1,3 @@
-// SPDX-License-Identifier: MIT
 pragma solidity >=0.6.0 <0.8.0;
 
 import "@openzeppelin/contracts/token/ERC20/ERC20.sol";
@@ -21,7 +20,9 @@ contract Token is ERC20 {
     }
 
     function mint(address adr, uint amount) public {
-        require(msg.sender == minter, "Error. Minter only can be creator of token");
+        require(msg.sender == minter, "Error. Minter only can be creator of token.");
         _mint(adr, amount);
     }
+
+
 }
